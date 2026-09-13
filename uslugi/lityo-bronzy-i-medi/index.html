@@ -23,10 +23,10 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#0E1218">
+  <meta name="theme-color" content="#16293D">
   <link rel="preload" href="/assets/fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/manrope-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <style>:root{--c-graphite-900:#0E1218;--c-graphite-800:#171D26;--c-bg:#F4F6F8;--c-white:#fff;--c-accent:#E8562D;--c-steel-light:#C3C9D4;--font-main:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;--header-h:72px;--container-max:1280px;--container-pad:16px}@media(min-width:768px){:root{--container-pad:24px}}*,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:var(--font-main);color:#0E1218;background:var(--c-bg);line-height:1.55;overflow-x:hidden}.container{max-width:var(--container-max);margin:0 auto;padding-left:var(--container-pad);padding-right:var(--container-pad)}.site-header{position:sticky;top:0;z-index:500;background:rgba(14,18,24,.92);color:#fff;height:var(--header-h)}.site-header__inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.15rem}h1{font-size:clamp(1.9rem,1.5rem + 2vw,3.2rem);font-weight:800;line-height:1.12}</style>
+  <style>:root{--color-header:#16293D;--color-surface-alt:#F2F6FA;--font-main:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;--header-h:72px;--container-max:1280px;--container-pad:16px}@media(min-width:768px){:root{--container-pad:24px}}*,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:var(--font-main);color:#1B2B3A;background:var(--color-surface-alt);line-height:1.55;overflow-x:hidden}.container{max-width:var(--container-max);margin:0 auto;padding-left:var(--container-pad);padding-right:var(--container-pad)}.site-header{position:sticky;top:0;z-index:500;background:var(--color-header);color:#fff;height:var(--header-h)}.site-header__inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.15rem}h1{font-size:clamp(1.9rem,1.5rem + 2vw,3.2rem);font-weight:800;line-height:1.12}</style>
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://lmz-omsk.ru/#organization","name":"ООО «ЛМЗ» — Литейно-механический завод","legalName":"Общество с ограниченной ответственностью «Литейно-механический завод»","alternateName":"ЛМЗ","taxID":"5503077619","url":"https://lmz-omsk.ru/","logo":"https://lmz-omsk.ru/assets/img/icon-512.png","image":"https://lmz-omsk.ru/assets/img/og-image.png","telephone":"+79913800644","foundingDate":"2004-01-14","address":{"@type":"PostalAddress","streetAddress":"ул. Орджоникидзе, д. 286","addressLocality":"Омск","addressRegion":"Омская область","postalCode":"644034","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":54.9926,"longitude":73.3252},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},"priceRange":"$$"}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://lmz-omsk.ru/#website","url":"https://lmz-omsk.ru/","name":"ООО «ЛМЗ» — литейное производство в Омске","inLanguage":"ru-RU"}</script>
@@ -43,7 +43,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="/" class="logo" aria-label="ЛМЗ — на главную">
-        <svg viewBox="0 0 40 40" class="logo__mark" aria-hidden="true"><path fill="url(#lmzGrad)" d="M20 4c1 3 8.5 12.3 8.5 19.2C28.5 30 24.8 34 20 34s-8.5-4-8.5-10.8C11.5 16.3 19 7 20 4z"/><defs><linearGradient id="lmzGrad" x1="11" y1="4" x2="29" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#E8562D"/><stop offset="1" stop-color="#C8451F"/></linearGradient></defs></svg>
+        <svg viewBox="0 0 40 40" class="logo__mark" aria-hidden="true"><path fill="url(#lmzGrad)" d="M20 4c1 3 8.5 12.3 8.5 19.2C28.5 30 24.8 34 20 34s-8.5-4-8.5-10.8C11.5 16.3 19 7 20 4z"/><defs><linearGradient id="lmzGrad" x1="11" y1="4" x2="29" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#FF6A2B"/><stop offset="1" stop-color="#FF8347"/></linearGradient></defs></svg>
         <span class="logo__text">ЛМЗ<span class="logo__sub">Литейно-механический завод</span></span>
       </a>
       <nav class="main-nav" aria-label="Основная навигация">
@@ -95,6 +95,13 @@
       <p class="lead">Отливки из бронзы и меди — для деталей с антифрикционными свойствами и повышенной коррозионной стойкостью.</p>
     </div>
   </header>
+  <div class="stats-strip">
+    <div class="container">
+      <p class="stats-strip__text">С <strong><span data-site-founded>2004</span> года</strong> · Сталь и чугун от <strong>220 кг</strong> · Алюминий <strong>1–30 кг</strong> · Бронза и медь до <strong>60 кг</strong></p>
+    </div>
+  </div>
+
+
 
   <section class="section">
     <div class="container">
@@ -206,7 +213,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="/" class="logo" aria-label="ЛМЗ — на главную" style="margin-bottom:16px">
-            <svg viewBox="0 0 40 40" class="logo__mark" aria-hidden="true"><path fill="url(#lmzGrad)" d="M20 4c1 3 8.5 12.3 8.5 19.2C28.5 30 24.8 34 20 34s-8.5-4-8.5-10.8C11.5 16.3 19 7 20 4z"/><defs><linearGradient id="lmzGrad" x1="11" y1="4" x2="29" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#E8562D"/><stop offset="1" stop-color="#C8451F"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" class="logo__mark" aria-hidden="true"><path fill="url(#lmzGrad)" d="M20 4c1 3 8.5 12.3 8.5 19.2C28.5 30 24.8 34 20 34s-8.5-4-8.5-10.8C11.5 16.3 19 7 20 4z"/><defs><linearGradient id="lmzGrad" x1="11" y1="4" x2="29" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#FF6A2B"/><stop offset="1" stop-color="#FF8347"/></linearGradient></defs></svg>
             <span class="logo__text" style="color:#fff">ЛМЗ<span class="logo__sub">Литейно-механический завод</span></span>
           </a>
           <p>Литейное производство в Омске с <span data-site-founded>2004</span> года: отливки из чугуна, стали, бронзы, меди и алюминия под заказ — от единичных деталей до мелкосерийных партий.</p>
