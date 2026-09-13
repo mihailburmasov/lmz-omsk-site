@@ -607,12 +607,12 @@ body.no-scroll { overflow: hidden; }
   inset: 0;
   z-index: 0;
 }
-.hero__bg img, .hero__bg svg { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.5; }
+.hero__bg img, .hero__bg svg { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.7; }
 .hero__bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(22,41,61,.95) 0%, rgba(22,41,61,.88) 40%, rgba(22,41,61,.55) 70%, rgba(22,41,61,.25) 100%);
+  background: linear-gradient(90deg, rgba(22,41,61,.8) 0%, rgba(22,41,61,.68) 40%, rgba(22,41,61,.4) 70%, rgba(22,41,61,.12) 100%);
 }
 .hero__inner {
   position: relative;
