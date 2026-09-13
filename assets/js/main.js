@@ -167,25 +167,6 @@
     });
   }
 
-  /* ---------- Ленивая загрузка карты по клику ---------- */
-  function initLazyMap() {
-    var preview = document.querySelector('.map-embed__preview');
-    var mapEl = document.querySelector('.map-embed');
-    if (!preview || !mapEl) return;
-    preview.addEventListener('click', function () {
-      var src = mapEl.getAttribute('data-map-src');
-      if (!src) return;
-      var iframe = document.createElement('iframe');
-      iframe.src = src;
-      iframe.loading = 'lazy';
-      iframe.title = 'Карта проезда до ООО «ЛМЗ»';
-      iframe.setAttribute('allowfullscreen', '');
-      mapEl.innerHTML = '';
-      mapEl.appendChild(iframe);
-      trackEvent('map_open');
-    });
-  }
-
   /* ---------- Cookie-баннер ---------- */
   function initCookieBanner() {
     var banner = document.querySelector('.cookie-banner');
@@ -236,7 +217,6 @@
     initMessengerWidget();
     initReveal();
     markActiveNav();
-    initLazyMap();
     initCookieBanner();
   });
 })();
