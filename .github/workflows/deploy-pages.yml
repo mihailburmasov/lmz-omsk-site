@@ -1,0 +1,42 @@
+name: Deploy GitHub Pages demo
+
+# Держит демо-ветку gh-pages (https://mihailburmasov.github.io/lmz-omsk-site/)
+# в актуальном состоянии. Сайт написан для хостинга в корне домена (все
+# внутренние пути абсолютные — "/assets/..."), а GitHub Pages для обычного
+# репозитория отдаёт контент из подпути "/lmz-omsk-site/" — поэтому демо
+# нельзя просто взять из main как есть: tools/make-pages-demo.js переписывает
+# все "/assets/..." в "/lmz-omsk-site/assets/..." перед публикацией.
+#
+# Ручной запуск того же процесса описан в комментарии в начале
+# tools/make-pages-demo.js — этот workflow просто выполняет те же шаги
+# автоматически при каждом пуше в main.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build Pages demo (paths prefixed for /lmz-omsk-site/)
+        run: node tools/make-pages-demo.js "$RUNNER_TEMP/pages-build"
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ runner.temp }}/pages-build
+          publish_branch: gh-pages
