@@ -17,6 +17,7 @@
 | `gallery-sklad-otlivok.jpg` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Diecasting_machine_cold_chamber.jpg) | PlugPray | Public domain |
 | `gallery-otgruzka.jpg` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:High_Pressure_Die_Casting_Bay-Urse_Plant.jpg) | Mohsina Faiz | CC BY-SA 4.0 |
 | `usluga-bronza-med.jpg` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bronze_Casting_Workshop,_University_for_the_Creative_Arts_(Farnham_Campus),_Surrey_-_September_2025_-_01.jpg) | Mertbiol | CC0 |
+| `usluga-alyuminiy.jpg` | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aluminium_melting_crucible_casting_process.jpg) | Rosebudz92 | CC BY-SA 4.0 |
 
 Несколько файлов используются повторно на нескольких страницах (например,
 `gallery-ruchnaya-formovka.jpg` — и в галерее, и на странице «Литьё в ПГС»).
