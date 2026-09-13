@@ -1,0 +1,9 @@
+# Логи заявок и антиспам-счётчики (создаются автоматически на проде)
+mail/log/leads.csv
+mail/log/ratelimit/
+
+# Системные файлы ОС/редакторов
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
