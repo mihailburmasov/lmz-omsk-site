@@ -217,6 +217,6 @@
     initMessengerWidget();
     initReveal();
     markActiveNav();
-    initCookieBanner();
+    // initCookieBanner(); // временно отключено по просьбе заказчика
   });
 })();

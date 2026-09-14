@@ -178,7 +178,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-img, svg, picture { max-width: 100%; display: block; }
+img, svg, picture { max-width: 100%; height: auto; display: block; }
 [hidden] { display: none !important; }
 a { color: inherit; text-decoration: none; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
@@ -1227,12 +1227,12 @@ body.no-scroll { overflow: hidden; }
    -------------------------------------------------------------------------- */
 .service-layout {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-6);
   align-items: start;
 }
 @media (min-width: 1024px) {
-  .service-layout { grid-template-columns: 1fr 300px; }
+  .service-layout { grid-template-columns: minmax(0, 1fr) 300px; }
 }
 .service-sidebar {
   background: var(--color-surface-alt);
