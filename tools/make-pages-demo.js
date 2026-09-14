@@ -10,8 +10,9 @@
  * а не в подпуть, и все стили/скрипты/картинки не находятся (404).
  *
  * Этот скрипт копирует сайт в отдельную папку и добавляет префикс BASE
- * («/<имя-репозитория>») ко всем внутренним абсолютным href/src/action в
- * HTML и к путям в site.webmanifest — только для демо-ветки gh-pages.
+ * («/<имя-репозитория>») ко всем внутренним абсолютным href/src/action/
+ * data-full в HTML и к путям в site.webmanifest — только для демо-ветки
+ * gh-pages.
  * Реальный хостинг (ветка main) остаётся с путями от корня домена, как и
  * задумано в ТЗ.
  *
@@ -54,7 +55,7 @@ function copyRecursive(srcDir, destDir) {
       const destFile = path.join(destDir, entry.name);
       if (entry.name.endsWith('.html')) {
         let html = fs.readFileSync(srcFile, 'utf8');
-        html = html.replace(/(href|src|action)="(\/(?!\/)[^"]*)"/g, (m, attr, p) => `${attr}="${BASE}${p}"`);
+        html = html.replace(/(href|src|action|data-full)="(\/(?!\/)[^"]*)"/g, (m, attr, p) => `${attr}="${BASE}${p}"`);
         fs.writeFileSync(destFile, html, 'utf8');
       } else if (entry.name === 'site.webmanifest') {
         let json = fs.readFileSync(srcFile, 'utf8');
